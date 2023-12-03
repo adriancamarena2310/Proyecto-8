@@ -5,51 +5,46 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export class ProductComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
-  public isProductVisible: boolean = false;
-  public currentPrice: number = 10;
+  export class ProductComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
-  constructor() {
-    console.log('Constructor')
-  }
+    public isProductVisible: boolean = false;
 
-  ngOnInit(): void {
-    console.log('ngOnInit');
-  }
+    constructor() {
+      console.log('Constructor')
+    }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log({changes})
-    console.log('ngOnChanges');
-  }
+    ngOnInit(): void {
+      console.log('ngOnInit');
+    }
 
-  ngDoCheck(): void {
-    console.log('ngDoCheck');
-  }
+    ngOnChanges(changes: SimpleChanges): void {
+      console.log({changes})
+      console.log('ngOnChanges');
+    }
 
-  ngAfterContentInit(): void {
-    console.log('ngAfterContentInit');
-  }
+    ngDoCheck(): void {
+      console.log('ngDoCheck');
+    }
 
-  ngAfterContentChecked(): void {
-    console.log('ngAfterContentChecked');
-  }
+    ngAfterContentInit(): void {
+      console.log('ngAfterContentInit');
+    }
 
-  ngAfterViewInit(): void {
-    console.log('ngAfterViewInit');
-  }
+    ngAfterContentChecked(): void {
+      console.log('ngAfterContentChecked');
+    }
 
-  ngAfterViewChecked(): void {
-    console.log('ngAfterViewChecked');
-  }
+    ngAfterViewInit(): void {
+      console.log('ngAfterViewInit');
+    }
 
-  ngOnDestroy(): void {
-    console.log('ngOnDestroy');
-  }
+    ngAfterViewChecked(): void {
+      console.log('ngAfterViewChecked');
+    }
 
-
-  increasePrice() {
-    this.currentPrice++;
-  }
+    ngOnDestroy(): void {
+      console.log('ngOnDestroy');
+    }
 
 }
