@@ -15,10 +15,12 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
       console.log('Constructor')
     }
 
+    //primera peticion http, timer, etc, despues de que el componente de angular sea completamente montado
     ngOnInit(): void {
       console.log('ngOnInit');
     }
 
+    // si necesitamos estar pendientes de los cambios de las propiedades
     ngOnChanges(changes: SimpleChanges): void {
       console.log({changes})
       console.log('ngOnChanges');
@@ -44,6 +46,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
       console.log('ngAfterViewChecked');
     }
 
+    // Hacer limpiezas
     ngOnDestroy(): void {
       console.log('ngOnDestroy');
     }
